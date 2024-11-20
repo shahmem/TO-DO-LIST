@@ -16,10 +16,10 @@ function add() {
   span.textContent = inputValues;
   list.appendChild(span);
 
-  const checkbox =document.createElement("input");
-  checkbox.type = "checkbox";
-      checkbox.id = "checkbox";
-      list.appendChild(checkbox);
+  // const checkbox =document.createElement("input");
+  // checkbox.type = "checkbox";
+  //     checkbox.id = "checkbox";
+  //     list.appendChild(checkbox);
 
   const delBtn = document.createElement("button");
   const delimg = document.createElement("img");
