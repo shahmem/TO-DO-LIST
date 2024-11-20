@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(196, 200, 255) !important;
+    padding-bottom: 3rem !important;
+}
+.navbar{
+    background-color: rgb(3,6,48);
+}
+.nav-icon{
+    margin-bottom: 3px !important;
+}
+.navbar-brand{
+    color: rgba(213, 215, 255, 0.918) !important;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+
+}
+.navbar-nav a{
+    color: rgba(213, 215, 255, 0.918) !important;
+    font-family:sans-serif !important;
+
+}
+.navbar-toggler{
+    border: none !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active
+{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+.todo-head{
+    text-align: center;
+    padding-top: 2.7rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.todo-icon{
+    margin-bottom: 3px;
+}
+.input-div{
+    display: flex;
+    height: 2.5rem;
+    margin-top: 4rem;
+}
+#box{
+    border: none;
+    margin: 0rem 0px 0 29vw   ;
+    padding: 0.4rem 25vw 0.4rem 0.8rem; 
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.219);
+    border-radius: 50px;
+}
+#box::placeholder{
+    padding-left: 0.2rem;
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: rgb(3,6,48);
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left:-2.4rem;
+}
+.add-btn{
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-weight: 500;
+    margin-top: -0.4rem;
+    font-size: 2.2rem;
+
+}
+#box:active,
+#box:focus{
+    outline: none;
+}
+.head-span{
+    background-color: rgb(3,6,48);
+    color: rgb(161, 183, 255);
+}
+#result{
+    list-style-type: none;
+    width: 60vw;
+    background-color: white;
+    margin-left: 19%;
+    margin-top: 7vh;
+    border-radius: 5px;
+
+}
+#result li{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 5px;
+}
+#checkbox{
+    width: 30px;
+    height: 30px;
+    margin: 2px 1px;
+    appearance: none;
+    border: 2px solid #ccc;
+    transition:  all 1s ease;
+
+}
+#checkbox:checked{
+    background-color: rgb(0, 112, 9);
+}
+#checkbox:checked::after{
+    content: '\2713';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+#cbox{
+    border: none;
+    color: rgb(3,6,48);
+    background-color: rgba(206, 209, 255, 0.726);
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+#cbox:active,
+#cbox:focus{
+    outline: none;
+}
+.index{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: -1.9rem;
+    padding-left: 12px;
+    background-color: rgb(3,6,48);
+    border-radius: 3px;
+    padding-top: 3px;
+}
+#span{
+    color: rgb(3,6,48);
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(222, 224, 255, 0.589);
+    padding-left: 5px;
+    border-radius: 3px;
+    padding-top: 3px;
+}
+#result button{
+    border: none;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+}
+.del{
+    background-color: rgb(189, 0, 0);
+    padding: 3px 5px;
+}
+.edit{
+    background-color: rgb(190, 190, 0);
+    padding: 0px 2px 3px 4px;
+}
+.sub-div{
+    display: flex;
+    justify-content: center;
+}
+.submit{
+    border: none;
+}
+@media all and (max-width:1000px){
+    .input-div{
+        margin-top: 3.8rem;
+    }
+    #box{
+        margin: 0rem 0px 0 25vw   ;
+        padding: 0.3rem 25vw 0.3rem 0.8rem; 
+    }
+    #result{
+        width: 80vw;
+        margin-left: 9%;
+        margin-top: 7vh;
+    }#checkbox{
+        width: 27px;
+        height: 27px;
+        margin: 2px 1px;
+    }
+    #checkbox:checked::after{
+        font-size: 17px;
+    }
+}
+@media all and (max-width:700px){
+    .input-div{
+        height: 2.2rem;
+        margin-top: 2.8rem;
+    }
+    #box{
+        margin: 0rem 0px 0 14vw   ;
+        padding: 0.2rem 25vw 0.2rem 0.8rem; 
+    }
+    .btn-div{
+        width: 2rem;
+        height: 2rem;
+        margin-top: 2px;
+        margin-left:-2.15rem;
+    }
+    .add-btn{
+        margin-top: -0.3rem;
+        font-size: 1.8rem;
+    }
+    #result{
+        width: 90vw;
+        margin-left: 5%;
+        margin-top: 7vh;
+    }
+    .del img{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .edit img{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+}
+@media all and (max-width:320px){
+    .input-div{
+        height: 1.9rem;
+        margin-top: 2.3rem;
+    }
+    #box{
+        margin: 0rem 0px 0 8vw   ;
+        padding: 0.3rem 25vw 0.2rem 0.8rem; 
+    }
+    .btn-div{
+        width: 1.74rem;
+        height: 1.74rem;
+        margin-top: 1.9px;
+        margin-left:-1.89rem;
+    }
+    .add-btn{
+        font-size: 1.7rem;
+    }
+    .del{
+        padding: 2px 3px;
+    }
+    .edit{
+        font-size: 14px;
+    }
+    .del img{
+        width: 1.15rem;
+        height: 1.15em;
+    }
+    .edit img{
+        width: 1.15rem;
+        height: 1.15rem;
+    }
+    .index{
+        font-size: 15px;
+        font-weight: 500;
+        padding-top: 3px;
+    }
+    #span{
+        font-size: 16px;
+    }
+    #checkbox{
+        width: 25px;
+        height: 25px;
+        margin: 2px 1px;
+    }
+    #checkbox:checked::after{
+        font-size: 15px;
+    }
+}
